@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var std = function() {
+			this.fullname = "";
+			this.age = "";
+			this.address = "";
+			this.email = "";
+			this.phone = "";
+
+			this.nhap = function() {
+				this.fullname = prompt("Nhap ten");
+				this.age = prompt("Nhap tuoi");
+				this.address = prompt("Nhap dia chi");
+				this.email = prompt("Nhap email");
+				this.phone = prompt("Nhap phone");
+			}
+
+			this.hienthi = function() {
+				console.log("Fullname " + this.fullname);
+				console.log("Tuoi " + this.age);
+				console.log("Address " + this.address);
+				console.log("Email " + this.email);
+				console.log("Phone " + this.phone);
+			}
+		} 
+		var stdA = new std();
+		stdA.nhap();
+		stdA.hienthi();
+		var stdB = new std();
+		stdB.nhap();
+		stdB.hienthi();
+	</script>
+</body>
+</html>
